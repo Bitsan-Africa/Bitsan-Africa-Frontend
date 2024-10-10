@@ -4,8 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primaryColor: "",
+        primaryBlack: "#1E1E1E",
+        primaryYellow: "#F1A501",
       },
+      fontFamily:{
+        Inter: ["Inter", "sans-serif"]
+      }
     },
   },
   plugins: [],
