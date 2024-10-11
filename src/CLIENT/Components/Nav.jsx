@@ -6,7 +6,7 @@ const Nav = () => {
   const [hamBurger, setHamBurger] = useState(false);
   return (
         <nav className="text-white flex w-full justify-between items-center py-8 lg:px-20 px-6 shadow-xl z-20 ">
-      <a href="">
+      <a className="text-3xl font-bold" href="">
         <img src="logo" alt="" />
         Bitsan
       </a>
@@ -14,22 +14,18 @@ const Nav = () => {
       <div className={`CENTER ${hamBurger ? 'top-0 right-0' : 'top-0 md:-right-0 -right-[70vw]'} flex md:flex-row flex-col md:relative md:h-max h-screen md:w-max w-[70vw]  fixed md:gap-[2rem] gap-[3.125rem] md:items-center items-start md:p-0 md:py-0 py-[5rem] p-[2.375rem]`}>
         <Link
         onClick={() => setHamBurger(!hamBurger)}
-         className="md:text-base hover:opacity-70 text-xl font-bold" to={"/"}>
+         className="md:text-[1.125rem] hover:text-primaryYellow font-bold  text-xl " to={"/"}>
           Home
         </Link>
         <Link
         onClick={() => setHamBurger(!hamBurger)}
-         className="md:text-base text-xl hover:opacity-70" to={"/about"}>About us</Link>
+         className="md:text-[1.125rem] text-xl hover:text-primaryYellow font-bold " to={"/about"}>About us</Link>
         <Link
         onClick={() => setHamBurger(!hamBurger)}
-         className="md:text-base text-xl hover:opacity-70" to={"/faqs"}>Our Services</Link>
+         className="md:text-[1.125rem] text-xl hover:text-primaryYellow font-bold " to={"/faqs"}>Our Services</Link>
         <Link
         onClick={() => setHamBurger(!hamBurger)}
-         className="md:text-base text-xl hover:opacity-70" to={"/contact"}>Contact Us</Link>
-        
-        <Link
-        onClick={() => setHamBurger(!hamBurger)}
-         className="md:text-base text-xl hover:opacity-70 md:hidden text-red-500" to={"/login"}>Logout</Link>
+         className="md:text-[1.125rem] text-xl hover:text-primaryYellow font-bold " to={"/contact"}>Contact Us</Link> 
       </div>
      
       <div>
