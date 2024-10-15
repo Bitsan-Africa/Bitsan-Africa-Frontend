@@ -15,12 +15,12 @@ const Portfolio = () => {
         "Bitsan platform has been such a great experience using one of their services is top notch without any regrets. I was able to book my hostel through their website Bitsan hostel accommodations.",
     },
     {
-        name: "Usman Abdullahi",
-        profession: "Frontend Developer",
-        img: "/image.png",
-        comments:
-          "Bitsan platform has been such a great experience using one of their services is top notch without any regrets. I was able to book my hostel through their website Bitsan hostel accommodations.",
-      },
+      name: "Usman Abdullahi",
+      profession: "Frontend Developer",
+      img: "/image.png",
+      comments:
+        "Bitsan platform has been such a great experience using one of their services is top notch without any regrets. I was able to book my hostel through their website Bitsan hostel accommodations.",
+    },
     {
       name: "Hussein Idris",
       profession: "Fullstack Developer",
@@ -77,27 +77,30 @@ const Portfolio = () => {
 };
 // Custom next arrow component
 const NextArrow = (props) => {
-    const { onClick } = props;
-    return (
-      <button
-        className="forward w-[65px] h-[65px] bg-primaryYellow rounded-full flex justify-center items-center absolute right-[-45px] bottom-[-145px] transform -translate-y-1/2"
-        onClick={onClick}
-      >
-        <i className="text-white text-2xl font-bold fa fa-chevron-right"></i>
-      </button>
-    );
-  };
-  
-  // Custom previous arrow component
-  const PrevArrow = (props) => {
-    const { onClick } = props;
-    return (
-      <button
-        className="backward w-[65px] h-[65px] bg-primaryYellow rounded-full flex justify-center items-center absolute left-[-45px] bottom-[-145px] transform -translate-y-1/2"
-        onClick={onClick}
-      >
-        <i className="text-white text-2xl font-bold fa fa-chevron-left"></i>
-      </button>
-    );
-  };
+  const { onClick } = props;
+  return (
+    <button
+      className="forward w-[65px] h-[65px] bg-primaryYellow rounded-full flex justify-center items-center absolute right-[-45px] bottom-[-145px] transform -translate-y-1/2"
+      onClick={onClick}
+    >
+      <i className="text-white text-2xl font-bold fa fa-chevron-right"></i>
+    </button>
+  );
+};
+
+// Custom previous arrow component
+const PrevArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <button
+      className="backward w-[65px] h-[65px] bg-primaryYellow rounded-full flex justify-center items-center absolute left-[-45px] bottom-[-145px] transform -translate-y-1/2"
+      onClick={onClick}
+    >
+      <i className="text-white text-2xl font-bold fa fa-chevron-left"></i>
+    </button>
+  );
+};
 export default Portfolio;
+
+// 73867573544014
+// 20192999
