@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -13,4 +13,13 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-thumb {
   @apply bg-primaryYellow rounded-full;
+}
+.bg-custom {
+  background-size: 100% 100%; /* Makes the image stretch to fit */
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  body {
+    zoom: 90%;
+  }
 }

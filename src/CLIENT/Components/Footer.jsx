@@ -1,17 +1,6 @@
 import React from "react";
-import FooterComponents from "./FooterComponents";
 
 const Footer = () => {
-  const Footerdata = [
-    [
-      "Services",
-      "Bitsan Hostel Accommodation",
-      "Bitsan Hotel and Suite Booking",
-      "Wifi Range Network Solutions",
-      "Purchase",
-    ],
-    ["Follow Us", "Facebook", "Twitter", "Instagram"],
-  ];
   return (
     <footer className="py-[6.25rem] lg:px-20 px-6 bg-white flex flex-col gap-9">
       <div className="md:flex grid grid-cols-2 justify-between items-start">
