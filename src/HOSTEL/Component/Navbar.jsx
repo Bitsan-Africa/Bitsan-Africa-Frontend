@@ -6,10 +6,13 @@ const Navbar = () => {
   const [hamBurger, setHamBurger] = useState(false);
   return (
     <nav className="text-[#1A1A1A] flex w-full justify-between items-center py-8 lg:px-20 px-6 shadow-xl z-20 ">
-      <a className="text-3xl font-bold" href="">
+      {/* <a className="text-3xl font-bold" href="">
         <img src="logo" alt="" />
         Bitsan
-      </a>
+      </a> */}
+      <h1 className="relative font-bold text-3xl">
+          BISTSAN <span className="absolute top-5 left-[52px]">HOSTEL</span>
+        </h1>
 
       <div
         className={`CENTER ${
