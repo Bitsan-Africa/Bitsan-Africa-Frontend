@@ -4,11 +4,12 @@ import ReviewsCard from "../Component/ReviewsCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Footer from "../Component/Footer";
 
 const RoomDetails = () => {
   const settings = {
-    dots: true, // Enable dots for navigation
-    infinite: true, // Infinite scrolling
+    dots: false, // Enable dots for navigation
+    infinite: false, // Infinite scrolling
     speed: 500, // Animation speed in ms
     slidesToShow: 3, // Show 3 cards at a time
     slidesToScroll: 1, // Scroll 1 card at a time
@@ -34,7 +35,7 @@ const RoomDetails = () => {
     <div className="text-primaryBlack">
       <Navbar />
 
-      <main className="pt-[2rem] pb-[14.8125rem] bg-white flex flex-col justify-center items-center gap-[5.3125rem] lg:px-20 px-6">
+      <main className="pt-[2rem] pb-[10.3125rem] bg-white flex flex-col justify-center items-center gap-[5.3125rem] lg:px-20 px-6">
         <header className="grid px-5 grid-cols-2 gap-16 place-items-center">
           <img src="/SVGS/imgdetails1.svg" className="h-full" alt="" />
           <div className="flex flex-col gap-9">
@@ -136,7 +137,10 @@ const RoomDetails = () => {
 
             <div className="reviews flex flex-col gap-8">
               <h1 className="text-3xl font-bold">Reviews</h1>
-              <Slider {...settings} className="flex gap-4 items-center">
+              <Slider
+                {...settings}
+                className="flex gap-4 items-center flex-wrap"
+              >
                 <ReviewsCard />
                 <ReviewsCard />
                 <ReviewsCard />
@@ -144,10 +148,14 @@ const RoomDetails = () => {
                 <ReviewsCard />
                 <ReviewsCard />
               </Slider>
+              <button className="border-[1px] border-primaryYellow p-2.5 w-max rounded-full text-primaryBlack">
+                View all 100 reviews
+              </button>
             </div>
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
