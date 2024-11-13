@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 * {
-  @apply p-0 m-0 box-border font-Inter;
+  @apply p-0 m-0 md:text-base text-sm box-border font-Inter;
 }
 
 body::-webkit-scrollbar {

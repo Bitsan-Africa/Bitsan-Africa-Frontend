@@ -14,7 +14,7 @@ const Hero = () => {
         </p>
       </header>
       <div className="search h-[22.375rem] rounded-3xl bg-primaryYellow px-7 flex justify-center items-center w-full">
-        <div className="h-[9.125rem] bg-white w-full rounded-xl flex gap-5 justify-center items-center">
+        <div className="h-[9.125rem] bg-white w-full rounded-xl flex gap-5 justify-center items-center px-8">
           <input
             className="h-[72px] rounded-lg border-2 border-black outline-none w-[18.75rem] pl-4"
             type="text"
