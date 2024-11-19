@@ -44,25 +44,25 @@ const Portfolio = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true, // enables partial next slide visibility
-    centerPadding: "100px", // adjust this for the partial slide effect
+    centerPadding: "10%", // adjust this for the partial slide effect
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     className: "portfolio-carousel",
   };
 
   return (
-    <section className="relative pt-[7.5rem] flex flex-col gap-24 bg-[#F7F7F7] pb-11 lg:px-20 px-6">
+    <section className="relative md:h-max h-[30rem] md:pt-[7.5rem] pt-8 flex flex-col md:gap-24 gap-8 bg-[#F7F7F7] md:pb-11 pb-8 lg:px-20 px-6">
       <img
         src="/SVGS/telephone.svg"
-        className="absolute top-0 right-7 opacity-10"
+        className="absolute top-0 right-7 opacity-10 md:w-max w-[3.125rem]"
         alt=""
       />
       <img
         src="/SVGS/telephone2.svg"
-        className="absolute bottom-0 left-7 opacity-10"
+        className="absolute bottom-0 left-7 opacity-10 md:w-max w-[3.125rem]"
         alt=""
       />
-      <h1 className="font-semibold text-6xl text-center">
+      <h1 className="font-semibold md:text-6xl text-2xl text-center">
         What our clients <br /> has to say
       </h1>
       <div className="flex flex-col gap-[4.1875rem] h-[35rem] justify-start">
@@ -80,10 +80,10 @@ const NextArrow = (props) => {
   const { onClick } = props;
   return (
     <button
-      className="forward w-[65px] h-[65px] bg-primaryYellow rounded-full flex justify-center items-center absolute right-[-45px] bottom-[-145px] transform -translate-y-1/2"
+      className="forward md:w-[65px] md:h-[65px] h-[25px] w-[25px] bg-primaryYellow rounded-full flex justify-center items-center absolute md:right-[-45px] md:bottom-[-145px] right-[-5px] bottom-[-90px] transform -translate-y-1/2"
       onClick={onClick}
     >
-      <i className="text-white text-2xl font-bold fa fa-chevron-right"></i>
+      <i className="text-white md:text-2xl text-xs font-bold fa fa-chevron-right"></i>
     </button>
   );
 };
@@ -93,10 +93,10 @@ const PrevArrow = (props) => {
   const { onClick } = props;
   return (
     <button
-      className="backward w-[65px] h-[65px] bg-primaryYellow rounded-full flex justify-center items-center absolute left-[-45px] bottom-[-145px] transform -translate-y-1/2"
+      className="backward md:w-[65px] md:h-[65px] w-[25px] h-[25px] bg-primaryYellow rounded-full flex justify-center items-center absolute md:left-[-45px] left-[-5px] md:bottom-[-145px] bottom-[-90px] transform -translate-y-1/2"
       onClick={onClick}
     >
-      <i className="text-white text-2xl font-bold fa fa-chevron-left"></i>
+      <i className="text-white md:text-2xl text-xs font-bold fa fa-chevron-left"></i>
     </button>
   );
 };

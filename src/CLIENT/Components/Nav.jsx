@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Nav.css";
 
 const Nav = () => {
-  const [hamBurger, setHamBurger] = useState(true);
+  const [hamBurger, setHamBurger] = useState(false);
   return (
     <nav className="text-white flex justify-between items-center py-8 lg:px-20 px-6 shadow-xl z-20">
       <a className="text-3xl font-bold" href="">

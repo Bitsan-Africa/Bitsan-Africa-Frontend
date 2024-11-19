@@ -14,8 +14,8 @@ const HomePage = () => {
         <HeroSection />
         <WhyBitsan />
         <Portfolio />
-        {/*   <GetInTouch />
-        <Footer /> */}
+        <GetInTouch />
+        <Footer />
       </section>
     </div>
   );
