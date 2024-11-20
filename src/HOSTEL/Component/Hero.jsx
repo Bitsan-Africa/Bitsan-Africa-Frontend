@@ -2,26 +2,26 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="lg:px-20 px-6 bg-custom bg-[url(/hostel.jpeg)] h-auto py-[10rem] bg-center bg-cover bg-no-repeat flex flex-col gap-[7.5rem] justify-center items-center">
-      <header className="text-white flex flex-col gap-4">
-        <h1 className="text-6xl font-bold text-center">
+    <div className="lg:px-20 md:px-6 bg-custom bg-[url(/hostel.jpeg)] h-auto md:py-[10rem] py-11 bg-center bg-cover bg-no-repeat flex flex-col md:gap-[7.5rem] gap-4 justify-center items-center">
+      <header className="text-white flex flex-col md:gap-4 gap-2">
+        <h1 className="md:text-6xl text-2xl font-bold text-center">
           Explore comforting hostels for <br />
           your stay on and off campus
         </h1>
-        <p className="text-2xl text-white/90 font-medium text-center">
+        <p className="md:text-2xl text-base text-white/70 font-medium text-center">
           From hostel to property sales, experience seamless <br /> connectivity
           and real estate solution.
         </p>
       </header>
-      <div className="search h-[22.375rem] rounded-3xl bg-primaryYellow px-7 flex justify-center items-center w-full">
-        <div className="h-[9.125rem] bg-white w-full rounded-xl flex gap-5 justify-center items-center px-8">
+      <div className="search md:text-base text-xs md:h-[22.375rem] h-[7.8125rem] md:rounded-3xl rounded-[5px] bg-primaryYellow md:px-7 px-5 flex justify-center items-center w-full">
+        <div className="md:h-[9.125rem] h-[4.4375rem] bg-white w-full md:rounded-xl rounded-[5px] flex md:gap-5 gap-1.5 justify-center items-center px-8">
           <input
-            className="h-[72px] rounded-lg border-2 border-black outline-none w-[18.75rem] pl-4"
+            className="md:h-[72px] h-[25px] md:rounded-lg rounded-sm border-2 border-black outline-none md:w-[18.75rem] w-[5.3125rem] md:pl-4 pl-1"
             type="text"
             placeholder="Location"
           />
           <select
-            className="h-[72px] rounded-lg border-2 border-black outline-none w-[18.75rem] pl-4"
+            className="md:h-[72px] h-[25px] md:rounded-lg rounded-sm border-2 border-black outline-none md:w-[18.75rem] w-[5.3125rem] md:pl-4 pl-1"
             name=""
             id=""
           >
@@ -30,13 +30,16 @@ const Hero = () => {
             <option value="">A room and parlour</option>
           </select>{" "}
           <select
-            className="h-[72px] rounded-lg border-2 border-black outline-none w-[18.75rem] pl-4"
+            className="md:h-[72px] h-[25px] md:rounded-lg rounded-sm border-2 border-black outline-none md:w-[18.75rem] w-[5.3125rem] md:pl-4 pl-1"
             name=""
             id=""
           >
             <option value="">Price Range</option>
             <option value="">200k - 500k</option>
           </select>
+          <button className="md:w-[8.3125rem] md:h-[4.4375rem] flex justify-center items-center w-[3.625rem] h-[1.5625rem] md:rounded-lg rounded-sm border-primaryBlack md:border-[1px] border-[0.25px] bg-primaryYellow md:text-base text-[11px] md:px-0 px-2 font-bold">
+            Search
+          </button>
         </div>
       </div>
     </div>

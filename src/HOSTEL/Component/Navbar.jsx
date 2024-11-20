@@ -11,13 +11,13 @@ const Navbar = () => {
         Bitsan
       </a> */}
       <h1 className="relative font-bold text-3xl">
-          BISTSAN <span className="absolute top-5 left-[52px]">HOSTEL</span>
-        </h1>
+        BISTSAN <span className="absolute top-5 left-[52px]">HOSTEL</span>
+      </h1>
 
       <div
         className={`CENTER ${
           hamBurger ? "top-0 right-0" : "top-0 md:-right-0 -right-[70vw]"
-        } flex md:flex-row flex-col md:relative md:h-max h-screen md:w-max w-[70vw]  fixed md:gap-8 gap-[3.125rem] md:items-center items-start md:p-0 md:py-0 py-[5rem] p-[2.375rem]`}
+        } md:bg-transparent bg-primaryYellow md:text-primaryBlack text-white flex md:flex-row flex-col md:relative md:h-max h-screen md:w-max w-[70vw]  fixed md:gap-8 gap-[3.125rem] md:items-center items-start md:p-0 md:py-0 py-[5rem] p-[2.375rem]`}
       >
         <Link
           onClick={() => setHamBurger(!hamBurger)}
@@ -47,9 +47,17 @@ const Navbar = () => {
         >
           Contact Us
         </Link>
+        <div className="md:hidden flex flex-col items-center gap-4">
+          <button className="border-[1px] border-black w-[8.3125rem] h-[2.5rem] rounded-lg flex justify-center items-center">
+            Log in
+          </button>
+          <button className="border-[1px] border-black w-[8.3125rem] h-[2.5rem] rounded-lg flex justify-center items-center bg-slate-200 text-primaryBlack">
+            Sign up
+          </button>
+        </div>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="md:flex hidden items-center gap-4">
         <button className="border-[1px] border-black w-[8.3125rem] h-[2.5rem] rounded-lg flex justify-center items-center">
           Log in
         </button>
@@ -61,9 +69,9 @@ const Navbar = () => {
         onClick={() => setHamBurger(!hamBurger)}
         className={`${hamBurger ? "ActiveBurger" : ""} hamburger `}
       >
-        <p></p>
-        <p></p>
-        <p></p>
+        <div className="bg-black border-black"></div>
+        <div className="bg-black"></div>
+        <div className="bg-black"></div>
       </button>
       <div
         onClick={() => setHamBurger(!hamBurger)}

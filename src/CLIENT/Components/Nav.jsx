@@ -55,9 +55,9 @@ const Nav = () => {
         onClick={() => setHamBurger(!hamBurger)}
         className={`hamburger ${hamBurger ? "ActiveBurger" : ""}  `}
       >
-        <p className="bg-white text-white"></p>
-        <p className="bg-white"></p>
-        <p className="bg-white"></p>
+        <div className="bg-white"></div>
+        <div className="bg-white"></div>
+        <div className="bg-white"></div>
       </div>
       <div
         onClick={() => setHamBurger(!hamBurger)}

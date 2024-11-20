@@ -11,10 +11,10 @@ const HostelHomePage = () => {
     <div className="">
       <Navbar />
       <Hero />
-      <Roomlist />
+      {/* <Roomlist />
       <WhyChooseUs />
       <Testimonials />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
