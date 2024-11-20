@@ -1,21 +1,22 @@
-.hamburger{
-    @apply md:hidden flex flex-col gap-2 w-10 justify-center items-center
+.hamburger {
+  @apply md:hidden flex flex-col gap-2 w-10 justify-center items-center z-20;
 }
-.hamburger p{
-    @apply bg-black w-9 h-[3px] opacity-70 rotate-[360deg]
+.hamburger p {
+  @apply w-9 rotate-[360deg] border-[2px] border-white;
 }
-.ActiveBurger{
-    @apply gap-0
+
+.ActiveBurger {
+  @apply gap-0;
 }
-.ActiveBurger p{
-    @apply  absolute origin-center
+.ActiveBurger p {
+  @apply absolute origin-center bg-white;
 }
-.ActiveBurger p:first-child{
-    @apply rotate-[135deg] 
+.ActiveBurger p:first-child {
+  @apply rotate-[135deg];
 }
-.ActiveBurger p:last-child{
-    @apply rotate-[-135deg]
+.ActiveBurger p:last-child {
+  @apply rotate-[-135deg];
 }
-.ActiveBurger p:nth-child(2){
-    @apply hidden
+.ActiveBurger p:nth-child(2) {
+  @apply hidden;
 }

@@ -3,7 +3,7 @@
 .portfolio-carousel .slick-current {
     opacity: 1;
     transform: scale(1);
-    width: 50rem;
+    /* width: 50rem; */
   }
   
   .portfolio-carousel .slick-slide {
@@ -29,12 +29,11 @@
   
   .slick-dots {
     bottom: -100px;
+    @apply md:bottom-[-100px] bottom-[-90px]
   }
   
   .slick-dots li button:before {
-    font-size: 18px;
-    font-weight: bolder;
-    color: #6e6e69;
+    @apply text-[#6e6e69] font-black md:text-[18px] text-[5px]
   }
   
   .slick-dots li.slick-active button:before {
