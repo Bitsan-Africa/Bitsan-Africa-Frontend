@@ -1,5 +1,3 @@
-import React from "react";
-
 const Hero = () => {
   return (
     <div className="lg:px-20 md:px-6 bg-custom bg-[url(/hostel.jpeg)] h-auto md:py-[10rem] py-11 bg-center bg-cover bg-no-repeat flex flex-col md:gap-[7.5rem] gap-4 justify-center items-center">
@@ -28,7 +26,7 @@ const Hero = () => {
             <option value="">Type of room</option>
             <option value="">A room self Con.</option>
             <option value="">A room and parlour</option>
-          </select>{" "}
+          </select>
           <select
             className="md:h-[72px] h-[25px] md:rounded-lg rounded-sm border-2 border-black outline-none md:w-[18.75rem] w-[5.3125rem] md:pl-4 pl-1"
             name=""
