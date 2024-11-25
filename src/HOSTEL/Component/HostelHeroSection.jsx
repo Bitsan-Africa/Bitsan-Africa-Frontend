@@ -1,4 +1,6 @@
-const Hero = () => {
+import React from "react";
+
+export const HotelHeroSection = () => {
   return (
     <div className="lg:px-20 md:px-6 bg-custom bg-[url(/hostel.jpeg)] h-auto md:py-[10rem] py-11 bg-center bg-cover bg-no-repeat flex flex-col md:gap-[7.5rem] gap-4 justify-center items-center">
       <header className="text-white flex flex-col md:gap-4 gap-2">
@@ -43,5 +45,3 @@ const Hero = () => {
     </div>
   );
 };
-
-export default Hero;
