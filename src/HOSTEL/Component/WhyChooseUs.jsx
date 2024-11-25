@@ -30,13 +30,13 @@ const WhyChooseUs = () => {
     },
   ];
   return (
-    <section className="lg:px-20 px-6 py-[7.5rem] flex flex-col gap-20 justify-center items-center">
+    <section className="lg:px-20 px-5 md:py-[7.5rem] py-[2.5rem] flex flex-col md:gap-20 gap-8 justify-center items-center">
       <Headers
-      style={"text-primaryYellow"}
+        style={"text-primaryYellow"}
         title={"Why choose us?"}
         txt={"Best easy way to get the house and apartment of your dreams"}
       />
-      <div className="flex flex-wrap justify-center items-center gap-8">
+      <div className="md:flex flex-wrap justify-center items-center grid grid-cols-2 md:gap-x-8 md:gap-y-8 gap-y-4 gap-2">
         {ChooseUsArr.map((choose, i) => (
           <ReasonToChooseUsCard key={i} {...choose} />
         ))}

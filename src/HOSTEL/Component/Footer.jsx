@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#222F3A] py-8 lg:px-20 px-6 flex flex-col gap-24">
-      <div className="text-gray-300 flex justify-between items-center">
+    <footer className="bg-[#222F3A] py-8 lg:px-20 px-6 flex flex-col md:gap-24 gap-8">
+      <div className="text-gray-300 md:flex-row flex-col flex justify-between md:items-center md:gap-0 gap-8">
         <h1 className="relative font-bold text-3xl text-white">
           BISTSAN <span className="absolute top-5 left-[52px]">HOSTEL</span>
         </h1>
@@ -37,7 +37,7 @@ const Footer = () => {
             </form>
           </header>
 
-          <div className="flex justify-between">
+          <div className="flex justify-between md:flex-row flex-col md:gap-0 gap-8">
             <div className="senter flex flex-col gap-4">
               <Link className="text-sm font-medium" to={"/"}>
                 Find Us
